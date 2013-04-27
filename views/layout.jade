@@ -77,6 +77,5 @@ html
     .container-fluid.desktop
       block content
 
-
-  script(src='https://sdk.auth0.com/auth0.js#client=0wQNYGe7pScvGJgOdfC37A7iA8GFZQOr')
+  script(src='https://sdk.auth0.com/auth0.js#client=#{env.AUTH0_CLIENTID || "0wQNYGe7pScvGJgOdfC37A7iA8GFZQOr" }')
   script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js')

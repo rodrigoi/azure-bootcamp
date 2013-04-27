@@ -5,7 +5,7 @@ var getDb    = require('mongo-getdb');
 var docs     = require('./lib/docs');
 var passport = require('passport');
 
-getDb.init({url: 'mongodb://azurebootcamp:azurebootcamp@ds045077.mongolab.com:45077/azurebootcamp'});
+getDb.init({url: process.env.DB || 'mongodb://localhost/mymdocs'});
 
 require('./lib/setupPassport');
 
