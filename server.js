@@ -97,6 +97,6 @@ app.get('/login',
   });
 
 http.createServer(app)
-    .listen(8080, function () {
+    .listen(process.env.PORT || 8080, function () {
       console.log('listening on http://localhost:8080');
     });
